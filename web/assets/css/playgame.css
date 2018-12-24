@@ -1,0 +1,55 @@
+header {
+    height: 35%;
+}
+header p{
+    margin: 5% 0 0 0;
+    font-size: 2em;
+}
+main{
+    position: relative;
+    border: 2px solid #D8B08C;
+    border-radius: 20px;
+    margin-top: -3em;
+}
+.line {
+    width: 112%;
+    border-bottom: 1px solid red;
+    -webkit-transform:
+            translateY(-20px)
+            translateX(5px)
+            rotate(27deg);
+    position: absolute;
+    top: 13.5em;
+    left: -3em;
+}
+.playerimage {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.playerimage img {
+    width: 100%;
+}
+
+.playerinfo {
+    border: 2px solid #D8B08C;
+    border-radius: 20px;
+    background-color: rgba(44, 53, 50, 0.3);
+    position: absolute;
+
+    width: 240px;
+    padding: 10px;
+    top: 5em;
+    left: 450px;
+}
+#player2{
+    top: 16em;
+    left: 3em;
+}
+#vs{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2em;
+}

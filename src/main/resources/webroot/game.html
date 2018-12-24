@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tetris Timewarp</title>
+
+    <link rel="stylesheet" href="./assets/css/reset.min.css">
+
+    <link rel="stylesheet" href="./assets/css/master.css">
+
+    <link rel="stylesheet" href="./assets/css/game.css">
+</head>
+
+<body>
+<main>
+    <section class="title_container" id="start">
+        <h1 class="title">Tetris<span>timewarp</span></h1>
+    </section>
+
+    <article id="player_one">
+        <h2>playername</h2>
+        <div class="hero_details">
+            <figure class="hero"><img src="./assets/img/pharao.png" alt="hero"></figure>
+
+            <div class="progress" id="progress_playerOne">
+                <div class="heropowertext">[F]</div>
+                <figure class="hero_attack"><img id="load" src="./assets/img/pharao_weapon.png" alt="attack"></figure>
+            </div>
+            <div class="events">
+                <div class="event"></div>
+                <div class="event"></div>
+                <div class="event"></div>
+            </div>
+            <div class="score"></div>
+            <div class="scoreToEvolve"></div>
+        </div>
+
+        <div class="playingfield">
+            <canvas class="field" width="200" height="400">
+
+            </canvas>
+        </div>
+    </article>
+
+    <article id="player_two">
+        <h2>playername</h2>
+        <div class="playingfield">
+            <canvas class="field" width="200" height="400">
+
+            </canvas>
+        </div>
+
+        <div class="hero_details">
+            <figure class="hero"><img src="./assets/img/pharao.png" alt="hero"></figure>
+
+            <div class="progress" id="progress_playerTwo">
+                <div class="heropowertext">[P]</div>
+                <figure class="hero_attack"><img src="./assets/img/pharao_weapon.png" alt="attack"></figure>
+            </div>
+            <div class="events">
+                <div class="event"></div>
+                <div class="event"></div>
+                <div class="event"></div>
+            </div>
+            <div class="score"></div>
+            <div class="scoreToEvolve"></div>
+        </div>
+    </article>
+
+    <div class="modal_container hidden">
+        <div class="modal">
+            <div class="modal_header">
+                <h2>settings</h2>
+                <span id='close'>x</span>
+            </div>
+            <div class="modal_content">
+                <div class="button_container">
+                    <a href="" class="button"><span>mute game</span></a>
+                    <a href="index.html" class="button"><span>leave game</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="game_over hidden">
+        <div class="modal">
+            <div class="modal_header">
+                <h2>Game Over</h2>
+            </div>
+            <div class="modal_content">
+                <figure><img src="./assets/img/Victory_royale_2.png" alt="victory"></figure>
+                <p><span id="score_player_one"></span><span id="score_player_two"></span></p>
+                <a href="index.html" class="button"><span>leave game</span></a>
+            </div>
+        </div>
+    </div>
+
+    <span id="pause">
+            ||
+        </span>
+</main>
+
+<script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.7.0/dist/progressbar.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script src="./assets/js/overal.js"></script>
+<script src="https://cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vertx/3.5.4/vertx-eventbus.min.js"></script>
+<script src="js/eb.js"></script>
+
+<script src="./assets/js/overal.js"></script>
+<script src="./assets/js/game.js"></script>
+</body>
+
+</html>

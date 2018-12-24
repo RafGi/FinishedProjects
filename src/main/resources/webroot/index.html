@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+
+    <link rel="stylesheet" href="assets/css/reset.min.css">
+
+    <link rel="stylesheet" href="assets/css/master.css">
+</head>
+
+<body>
+    <aside class="add">
+
+    </aside>
+    <div class="container">
+        <header>
+            <h1 class="title">TETRIS <span>TIMEWARP</span></h1>
+
+            <div id="playerinfo">
+                <figure class="playerimage">
+                    <img src="assets/img/smiley.png" alt="Smiley face">
+                </figure>
+
+                <div class="userdetail">
+                    <p><span id="username"></span><span id="level"></span></p>
+                    <div class="progress-bar">
+
+                    </div>
+                </div>
+
+                <figure id="clanAvatar">
+                    <img src="assets/img/tetriscard.jpg" alt="tetriscard">
+                </figure>
+            </div>
+        </header>
+
+        <main>
+            <div class="button_container">
+                <a href="choose-game.html" class="button"><span>play game</span></a>
+                <a href="shop/" class="button"><span>shop</span></a>
+                <a href="profile/" class="button"><span>inventory</span></a>
+                <a href="leaderboards.html" class="button"><span>leaderboards</span></a>
+
+                <div class="small">
+                    <a href="login.html" class="button" id="logout"><span>logout</span></a>
+                    <a href="#" class="button"><span>settings</span></a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <aside class="add">
+
+    </aside>
+
+    <div class="modal_container hidden">
+        <div class="modal">
+            <div class="modal_header">
+                <h2>settings</h2>
+                <span id='close'>x</span>
+            </div>
+            <div class="modal_content">
+                <div class="button_container">
+                    <a href="" class="button"><span>mute game</span></a>
+                    <a href="index.html" class="button"><span>leave game</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vertx/3.5.4/vertx-eventbus.min.js"></script>
+    <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.5.6/dist/progressbar.js"></script>
+    <script src="assets/js/user_details/user_details.js"></script>
+    <script src="assets/js/overal.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

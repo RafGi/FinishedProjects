@@ -1,0 +1,330 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Ropa Sans';
+    src: url('./../fonts/RopaSans-Regular.ttf');
+}
+
+body {
+    position: relative;
+
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Ropa Sans', sans-serif;
+    color: rgb(108, 163, 148);
+
+    padding: 0 100px;
+
+    background-color:#000000;
+    overflow: hidden; /* Overflow needs to be hidden because we don't want to see offscreen objects  */
+}
+
+
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background-image: url('../img/background2.jpeg');
+    background-size: 100% 100%;
+
+    filter: blur(5px) grayscale(0.9);
+    
+    z-index: -1;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+a {
+    color: #106466;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+header {
+    position: relative;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 150px);
+}
+
+figure {
+    overflow: hidden;
+}
+
+figure > img {
+    width:  100%;
+}
+
+.hidden {
+    display: none;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    width: 100%;
+    height: 30px;
+
+    margin-bottom: 10px;
+}
+
+nav a {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    color: #D8B08C;
+
+    text-align: center;
+    border-bottom: 1px solid #D8B08C;
+
+    line-height: 30px;
+
+    transition: all 0.2s ease;
+}
+
+nav a:not(:last-of-type){
+    border-right: 1px solid #D8B08C;
+}
+
+nav a:hover {
+    color:  #D2E9E3;
+    background-color: #106466;
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.add,
+.container,
+.button, 
+#playerinfo,
+#claninfo,
+.quests, 
+.quests li {
+    border: 2px solid #D8B08C;
+    border-radius: 20px;
+    background-color: rgba(44, 53, 50, 0.3);
+}
+
+#swarm {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* PLAYER BANNER */
+/* HTML usage 
+<section id="playerinfo">
+    <img class="playerimage" src="./assets/img/smiley.png" alt="Smiley face">
+    <div class="userdetail">
+        <p><span>username</span><span>lvl 6</span></p>
+        <div class="progress">
+
+        </div>
+    </div>
+    <img src="./assets/img/tetriscard.jpg" alt="tetriscard" id="clanAvatar">
+</section>
+*/
+#playerinfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 240px;
+    padding: 8px;
+}
+
+.playerimage {
+    width: 40px;
+    height: 40px;
+
+    margin-right: 5px; 
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    float: left;
+}
+
+.userdetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 170px;
+
+    height: 40px;
+}
+
+.userdetail p {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+}
+
+#clanAvatar {
+    height: 25px;
+    width:100%;
+    display: inline-block;
+
+    margin-top: 5px;
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    position: relative;
+}
+
+.progress-bar svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+#activepage {
+    background-color: #106466;
+    color: #D2E9E3;
+}
+
+/* CONTAINER */
+/* HTML usage => <div class='container'> --alle ander html elementen -- </div> */
+.container {
+    padding: 20px;
+    width: 800px;
+    height: 600px;
+
+    position: relative;
+}
+
+/* ADD BANNERS */
+/* HTML USAGE => <aside class="add"></aside> */
+.add {
+    width: 200px;
+    height: 600px;
+}
+
+/* GAME TITLE */
+/* HTML usage <h1 class="title">TETRIS <span>TIMEWARP</span></h1> */
+
+.title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.title span {
+    display: block;
+    font-size: 30px;
+    color: #FFCB9B;
+    
+    transform: translateX(7.5%)
+}
+
+/* BUTTON CSS */
+/* html usage => <a class='button'><span>name</span></a> */
+
+.button_container {
+    width: 260px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    width: 260px;
+    height: 50px;
+    display: block;
+    
+    color: #D2E9E3;
+    background-color: #106466;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
+    font-size: 30px;
+    text-align: center;
+
+    position: relative;
+
+    transition: all 0.6s ease;
+}
+
+.button span {
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button:hover, .button:focus{
+    color: #106466;
+    background-color: #D2E9E3;
+
+    text-decoration: none;
+}
+
+.button a:hover, .button a:focus {
+    text-decoration: none;
+    color: #106466;
+}
+
+.small {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.small .button {
+    font-size: 20px;
+    width: 120px;
+    margin-bottom: 0;
+}

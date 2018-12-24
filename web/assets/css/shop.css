@@ -1,0 +1,109 @@
+main{
+    margin-top: 1%;
+}
+article {
+    margin-top: 1%;
+}
+article figure {
+    width: 10em;
+    height: 7em;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+article img{
+    height: 100%;
+    width: 100%;
+}
+article p{
+    width:75%;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 0;
+}
+main,article,article figure{
+    border: 1px solid #D8B08C;
+}
+article,article figure{
+    border-radius: 20%;
+}
+.playerimage {
+    margin-top: -5px;
+}
+.button a{
+    color: #D2E9E3;
+}
+.nav{
+    margin-top: -5%;
+}
+.nav a, .scroll a{
+    margin: 0 -2.5px 0 0 ;
+    border: 1px solid #D8B08C;
+    color: #D2E9E3;
+    display: inline-block;
+    width: 20%;
+    height: 5%;
+    background-color: rgba(44, 53, 50, 0.3);
+    text-transform: uppercase;
+
+    font-size: 20px;
+    text-align: center;
+
+    position: relative;
+
+    transition: all 0.6s ease;
+
+}
+.scroll{
+    margin-left: 35%;
+    margin-top: 1%;
+    margin-bottom: 0.5%;
+}
+.scroll span{
+    margin-right: 1%;
+}
+.buyitem{
+    width: 150px;
+    height: 40px;
+    margin-left: -5%;
+    margin-bottom: 0;
+}
+.nav a:hover,.scroll a:hover{
+    color: #106466;
+    background-color: #D2E9E3;
+    text-decoration: none;
+}
+.store article {
+     width: 25%;
+     padding-left: 4%;
+ }
+.store {
+    flex-flow: row wrap;
+}
+.store {
+    display: flex;
+}
+#shop-buttons{
+    margin-top: -30px;
+    margin-left: -5px;
+}
+#playerinfo{
+    background-image: url("../img/tetriscard.jpg");
+    height: 50px;
+}
+#buybutton{
+    float:right;
+    margin-top: -65px;
+    margin-right: -10px;
+}
+#coins {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    width: 240px;
+    height: 50px;
+    padding: 10px;
+    border: 2px solid #D8B08C;
+    border-radius: 20px;
+    background-color: rgba(44, 53, 50, 0.3);
+}

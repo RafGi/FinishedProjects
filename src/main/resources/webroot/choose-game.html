@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Choose game</title>
+
+    <link rel="stylesheet" href="assets/css/reset.min.css">
+
+    <link rel="stylesheet" href="assets/css/master.css">
+
+    <!--page specific css-->
+    <link rel="stylesheet" href="assets/css/choose-game.css">
+</head>
+
+<body>
+    <aside class="add">
+
+    </aside>
+    <div class="container">
+        <header>
+            <h1 class="title">TETRIS <span>TIMEWARP</span></h1>
+
+            <div id="playerinfo">
+                <img class="playerimage" src="assets/img/smiley.png" alt="Smiley face">
+                <div class="userdetail">
+                    <p><span>username</span><span>lvl 6</span></p>
+                    <div class="progress-bar">
+
+                    </div>
+                </div>
+                <img src="assets/img/tetriscard.jpg" alt="tetriscard" id="clanAvatar">
+            </div>
+        </header>
+
+        <main>
+            <section class="quests">
+                <h2>Daily challenges</h2>
+
+                <ul>
+                    <li>
+                        <p><span>Challenge</span><span class="completion">completed</span></p>
+                        <div class="progress-bar">
+
+                        </div>
+                    </li>
+                    <li>
+                        <p><span>Challenge</span><span class="completion">completed</span></p>
+                        <div class="progress-bar">
+
+                        </div>
+                    </li>
+                    <li>
+                        <p><span>Challenge</span><span class="completion">completed</span></p>
+                        <div class="progress-bar">
+
+                        </div>
+                    </li>
+                </ul>
+
+                <a href="#">view all challenges</a>
+            </section>
+
+            <div class="button_container">
+                <a href="#" id="g1" class="button gamemode"><span>game mode 01</span></a>
+                <a href="#" id="g2" class="button gamemode"><span>game mode 02</span></a>
+                <a href="#" id="g3" class="button gamemode"><span>game mode 03</span></a>
+
+                <div class="small">
+                    <a href="index.html" class="button"><span>main menu</span></a>
+                    <a href="profile/" class="button"><span>heroes</span></a>
+                </div>
+            </div>
+
+            <section class="quests">
+                <h2>Daily challenges</h2>
+
+                <ul id="quests">
+                    <!--<li>-->
+                    <!--<p><span>Challenge</span><span class="completion">completed</span></p>-->
+                    <!--<div class="progress-bar">-->
+
+                    <!--</div>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<p><span>Challenge</span><span class="completion">completed</span></p>-->
+                    <!--<div class="progress-bar">-->
+
+                    <!--</div>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<p><span>Challenge</span><span class="completion">completed</span></p>-->
+                    <!--<div class="progress-bar">-->
+
+                    <!--</div>-->
+                    <!--</li>-->
+                </ul>
+
+                <a href="#">view all challenges</a>
+            </section>
+        </main>
+    </div>
+    <aside id="aside2" class="add">
+
+    </aside>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vertx/3.5.4/vertx-eventbus.min.js"></script>
+    <script src="assets/js/overal.js"></script>
+    <script src="assets/js/choose-game.js"></script>
+</body>
+
+</html>

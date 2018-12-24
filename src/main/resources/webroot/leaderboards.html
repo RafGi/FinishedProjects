@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="assets/css/reset.min.css">
+
+    <link rel="stylesheet" href="assets/css/master.css">
+    <!--page specific css-->
+    <link rel="stylesheet" href="assets/css/leaderboards.css">
+</head>
+
+<body>
+    <aside class="add">
+
+    </aside>
+    <div class="container">
+        <header>
+            <h1 class="title">Leaderboard</h1>
+
+            <div id="playerinfo">
+                <figure class="playerimage">
+                    <img src="../assets/img/smiley.png" alt="Smiley face">
+                </figure>
+
+                <div class="userdetail">
+                    <p><span id="username"></span><span id="level"></span></p>
+                </div>
+            </div>
+
+            <a href="index.html" class="button small"><span>BACK</span></a>
+
+        </header>
+
+        <main>
+
+            <article id="playersbyhighscore">
+                <h2>players by Highscore</h2>
+            </article>
+
+            <article id="playersbylvl">
+                <h2>players by lvl</h2>
+            </article>
+
+
+        </main>
+    </div>
+    <aside id="aside2" class="add">
+
+    </aside>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vertx/3.5.4/vertx-eventbus.min.js"></script>
+    <script src="assets/js/overal.js"></script>
+    <script src="assets/js/leaderboards.js"></script>
+</body>
+
+</html>

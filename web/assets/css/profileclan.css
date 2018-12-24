@@ -1,0 +1,84 @@
+header {
+    height: 35%;
+}
+h2{
+    text-align: center;
+    margin: 3% 0 2% 0;
+}
+.nav {
+    margin-top: 3%;
+    width: 100%;
+}
+
+.nav a {
+    margin: 0 -2.5px 0 0;
+    border: 1px solid #D8B08C;
+    color: #D2E9E3;
+    display: inline-block;
+    width: 20%;
+    height: 1.5em;
+    background-color: rgba(44, 53, 50, 0.3);
+    text-transform: uppercase;
+    padding-top: 0.5%;
+    font-size: 20px;
+    text-align: center;
+
+    position: relative;
+
+    transition: all 0.6s ease;
+
+}
+
+.nav a:hover {
+    color: #106466;
+    background-color: #D2E9E3;
+    text-decoration: none;
+}
+
+.playerimage {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.playerimage img {
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.playerimage:hover img {
+    transform: scale(1.1);
+}
+
+.small {
+    margin-top: 2.5%;
+}
+.clanlist{
+    border: 2px solid #D8B08C;
+    border-radius: 20px;
+}
+#playerinfo {
+    top: 90px;
+    left: 275px;
+}
+#claninfo {
+    position: absolute;
+    top: -8px;
+    left: 475px;
+
+    width: 240px;
+    padding: 10px;
+}
+#clanspecs{
+    flex-flow: row wrap;
+    display: flex;
+    height: 75%;
+}
+#clanspecs section{
+    width:50%;
+}
+#clanspecs p{
+    color: black;
+    text-align: left;
+    margin-left: 5%;
+}
+

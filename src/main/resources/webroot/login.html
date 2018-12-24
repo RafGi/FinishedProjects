@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="assets/css/reset.min.css">
+
+    <link rel="stylesheet" href="assets/css/master.css">
+
+    <!--page specific css-->
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+
+<body>
+    <main>
+        <canvas id="space">
+
+        </canvas>
+
+        <div class="btn pause">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2"></span>
+        </div>
+
+        <article>
+            <form class="login">
+                <h1>login</h1>
+                <label for="login_username">username</label>
+                <input type="text" id="login_username" placeholder="eg. John Doe" required="required">
+
+                <label for="login_password">password</label>
+                <input type="password" id="login_password" required="required">
+                <p>Not registerd? <a href="#" id="reglink">Create an account.</a></p>
+                <p id="loginfail"></p>
+                <input type="submit" value="login" id="login">
+            </form>
+
+            <form class="register hidden">
+                <h1>register</h1>
+                <label for="reg_username">username</label>
+                <input type="text" id="reg_username" placeholder="John Doe" required="required">
+
+                <label for="mail">email</label>
+                <input type="email" id="mail" placeholder="mail@mail.com" required="required">
+
+                <label for="reg_password">password</label>
+                <input type="password" id="reg_password" required="required">
+
+                <label for="password_rep">password</label>
+                <input type="password" id="password_rep" required="required">
+                <p id="registerfail"></p>
+                <input type="submit" value="register" id="register">
+            </form>
+
+        </article>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vertx/3.5.4/vertx-eventbus.min.js"></script>
+
+    <script src="assets/js/login/login.js"></script>
+
+    <script src="assets/js/login/lightspeed_animtion.js"></script>
+
+</body>
+
+</html>

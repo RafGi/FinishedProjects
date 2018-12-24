@@ -1,0 +1,35 @@
+#claninfo {
+    width: 250px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#claninfo .clandetail {
+    width: 100%;
+}
+
+.clandetail p {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#members {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#members p {
+    width: 25%;
+    line-height: 100%;
+    border-bottom: 0;
+    padding: 5px;
+}
+
+section {
+    padding: 10px 0;
+}
+
+section:not(:last-of-type) {
+    border-bottom: 1px dotted #D2E9E3;
+}

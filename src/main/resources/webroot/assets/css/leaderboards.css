@@ -1,0 +1,34 @@
+article{
+    width: 48%;
+    height: 100%;
+    border: 1px solid #D8B08C;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+
+    float: left;
+}
+
+article:last-of-type{
+    float: right;
+}
+
+h1{
+    transform: translateX(10px);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+em {
+    margin-right: 5px;
+}
+
+.small {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 120px;
+}

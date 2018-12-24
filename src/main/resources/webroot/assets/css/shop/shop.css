@@ -1,0 +1,128 @@
+main {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.store {
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    padding: 0 10px;
+}
+
+.scroll {
+    height: 40px;
+    width: 75%;
+    padding: 5px 0;
+    margin: 0 auto;
+    line-height: 25px;
+    text-align: center;
+}
+
+article {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+article figure {
+    width: 80%;
+    margin: 5px auto;
+}
+
+main,
+article {
+    border: 1px solid #D8B08C;
+}
+
+article,
+article figure {
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    height: 30px;
+
+    margin-bottom: 10px;
+}
+
+nav a {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+    border-bottom: 1px solid #D8B08C;
+
+    line-height: 30px;
+}
+
+nav a:not(:last-of-type){
+    border-right: 1px solid #D8B08C;
+}
+
+
+.scroll a{
+    border: 1px solid #D8B08C;
+    color: #D2E9E3;
+    display: inline-block;
+    width: 20%;
+    background-color: rgba(44, 53, 50, 0.3);
+    text-transform: uppercase;
+
+    font-size: 20px;
+    text-align: center;
+
+    position: relative;
+
+    transition: all 0.6s ease;
+}
+
+.buyitem {
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+#shop-buttons {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#playerinfo {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#buybutton {
+    float: right;
+}
+
+#coins {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 240px;
+    height: 60px;
+    padding: 10px;
+    border: 2px solid #D8B08C;
+    border-radius: 20px;
+    background-color: rgba(44, 53, 50, 0.3);
+}

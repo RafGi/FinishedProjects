@@ -1,0 +1,17 @@
+{
+    "player_one" : {
+        "up" : 87,
+        "down" : 83,
+        "left" : 65,
+        "right" : 68,
+        "heropower" : 70
+    },
+
+    "player_two": {
+        "up" : 73,
+        "down" : 75,
+        "left" : 74,
+        "right" : 76,
+        "heropower" : 186
+    }
+}
